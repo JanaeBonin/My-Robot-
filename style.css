@@ -1,0 +1,215 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wall {
+	display: flex;
+	height:500px;
+	width: 355px;
+	margin-right: 170px;
+	background-color: tan;
+}
+
+.window {
+	padding: 0;
+	width: 200px;
+	height: 250px;
+	margin: 130px 10px 0px 20px;
+	border: 3px solid black;
+}
+
+.frame {
+	background-image: url("window.jpeg");
+	background-size: cover;
+}
+
+.robots {
+	display: flex;
+	justify-content: center;
+	float: none;
+}
+
+.head, 
+.torso, 
+.left_leg, 
+.right_leg {
+	 background-color: #838381;
+}
+
+.hat { 
+	width: 100px; 
+	height: 50px; 
+	padding: 0;
+	margin: 0px auto; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+	background-color: blue;
+	z-index: 1;
+} 
+
+.brim {
+	width: 55px;
+	height: 8px;
+	margin-top: -18px;
+	margin-left: -20px;
+	background-color: blue;
+}
+
+.head {
+	width: 100px; 
+	margin-left: 75px;
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+}
+
+.nose {
+	display: flex;
+	background-color: #838381;
+	width: 120px;
+	height: 35px;
+	padding: 0;
+	margin: 30px 0 0 -25px;
+	border-radius: 90% 50% 20% 10%;
+}
+
+.nose:hover {
+	width: 100px;
+	height: 20px;
+	float: right;
+	padding-right: 150px;
+    transition: 1s linear;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+	background-color: blue;
+	margin: 20px 0 0 -95px;
+} 
+
+.right_arm:hover  {
+	-webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    transform: rotate(70deg);
+}
+
+.torso { 
+	width: 130px; 
+	height: 200px;
+	margin-left: 60px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 35px; 
+	margin-top: 25px;
+	z-index: 1;
+} 
+
+.kick:hover  {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 90px;
+    margin-top: -160px;
+}
+
+.football {
+width:70px;
+height:70px;
+margin: -50px 0 0 -50px;
+background: #783938;
+color: #ffffff;
+position: relative;
+font-size:20px;
+padding:10px;
+border-radius:50%;
+-webkit-border-radius: 75% 23% 75% 23%;
+}
+
+
+.football p {
+margin-left: 15px;
+-webkit-transform: rotate(-42deg);
+-moz-transform: rotate(-42deg);
+-ms-transform: rotate(-42deg);
+-o-transform: rotate(-42deg);
+
+}
+
+@keyframes football
+{
+0% {transform: rotate(0deg);right:0px;}
+25% {transform: rotate(20deg);right:0px;background: #783938;}
+50% {transform: rotate(0deg);right:500px;}
+55% {transform: rotate(0deg);right:500px;}
+70% {transform: rotate(0deg);right:500px;background: #FFF;}
+100% {transform: rotate(-360deg);right:0px;}
+}
+
+@-webkit-keyframes football
+{
+0% {-webkit-transform: rotate(0deg);right:0px;}
+25% {-webkit-transform: rotate(20deg);right:0px;background: #783938;}
+50% {-webkit-transform: rotate(0deg);right:500px}
+55% {-webkit-transform: rotate(0deg);right:500px;}
+70% {-webkit-transform: rotate(0deg);right:500px;background: #FFF;}
+100% {-webkit-transform: rotate(-360deg);right:0px;}
+}
+
+@-moz-keyframes football
+{
+0%  {-moz-transform: rotate(0deg);right:0px;}
+25% {-moz-transform: rotate(20deg);right:0px;background: #783938;}
+50%  {-moz-transform: rotate(0deg);right:500px;}
+55%  {-moz-transform: rotate(0deg);right:500px;}
+70%  {-moz-transform: rotate(0deg);right:500px;background: #FFF;}
+100% {-moz-transform: rotate(-360deg);right:0px;}
+}
+
+@-o-keyframes football
+{
+0% {transform: rotate(0deg);right:0px;}
+25% {transform: rotate(20deg);right:0px;background: #783938;}
+50%  {transform: rotate(0deg);right:500px;}
+55%  {transform: rotate(0deg);right:500px;}
+70%  {transform: rotate(0deg);right:500px;background: #FFF;}
+100% {transform: rotate(-360deg);right:0px;}
+}
+
+.football:hover {
+	animation:football 2s 1;
+	-moz-animation: football 2s 1;
+	-webkit-animation: football 2s 1;
+	-o-animation: football 2s 1;
+}
